@@ -8,7 +8,7 @@ package object Mult {
     override def print(): String = "(" + lhs.print() + " * " + rhs.print() + ")"
   }
 
-  class Add(l: Core.Expression, r: Core.Expression) extends GMult {
+  class Mult(l: Core.Expression, r: Core.Expression) extends GMult {
     type T = Core.Expression
 
     lhs = l
